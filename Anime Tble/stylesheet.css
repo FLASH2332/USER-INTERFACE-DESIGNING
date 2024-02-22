@@ -1,0 +1,74 @@
+/* Use a relative file path for the font */
+@font-face {
+  font-family: 'Tourney';
+  src: url('../FONT STYLES/Tourney-ExtraBoldItalic.ttf');
+}
+
+body {
+  background-image: url(https://upload-os-bbs.hoyolab.com/upload/2023/01/11/191975293/c88b514fae01c2a33b21eef4f156c13a_8045767176217813513.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: scroll;
+  background-color: black;
+}
+
+/* Use a CSS class for styling the background section */
+.background {
+  color: white;
+}
+
+/* Use a CSS class for styling the heading */
+.heading {
+  font-family: 'Tourney';
+  text-align: center;
+  color: rgb(255, 0, 128);
+  text-shadow: 1px 1px black;
+}
+
+/* Use CSS classes for styling the table and cells */
+.anime-table {
+  margin-top: 100px;
+  border-radius: 10px;
+  border-color: rgb(170, 8, 35);
+  margin-left: 300px;
+  width: 60%;
+  color: orange;
+  table-layout: fixed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.anime-table th {
+  color: rgb(35, 245, 12);
+  flex: 1 1 25%;
+  width: fit-content;
+}
+
+.anime-table td,
+.anime-table th {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: outset;
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+}
+.anime-table td:hover{
+  background-color: rgb(255, 0, 174);
+}
+.anime-table td{
+  padding: 37px;
+
+}
+
+/* Use CSS classes for styling the image */
+.anime-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 75%;
+  height: 75;
+  flex: 1 1 75%;
+}
+
