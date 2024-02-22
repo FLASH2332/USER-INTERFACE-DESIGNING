@@ -1,7 +1,3 @@
-Sure, here's a simple description you can use for the README file of your Git repository:
-
----
-
 # Forms Webpage
 
 This repository contains the code for a simple webpage with a form, image, YouTube video, and audio player. The webpage includes HTML and CSS files to structure the content and style it accordingly.
