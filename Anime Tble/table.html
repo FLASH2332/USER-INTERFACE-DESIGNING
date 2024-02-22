@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anime Characters</title>
+    <style>
+        /* CSS for the default background image */
+        body {
+            background-image: url("https://upload-os-bbs.hoyolab.com/upload/2023/01/11/191975293/c88b514fae01c2a33b21eef4f156c13a_8045767176217813513.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80");
+        }
+    </style>
+</head>
+<body id="back">
+    <header class="background">
+        <h1 class="heading" id="Heading">Screen Warriors</h1>
+    </header>
+    <main>
+        <table class="anime-table">
+            <tr data-url="https://upload-os-bbs.hoyolab.com/upload/2023/01/11/191975293/c88b514fae01c2a33b21eef4f156c13a_8045767176217813513.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80">
+                <th>Character Image</th>
+                <th>Anime Name</th>
+                <th>Character Name</th>
+                <th>Description</th>
+            </tr>
+            <tr data-url="https://www.animeexplained.com/wp-content/uploads/2023/06/Saitama-serious-featured.jpg" >
+                <td class="anime-image"><img src="C:\Users\jayad\Desktop\HTML\IMAGES\One punch man.jpg" alt="One Punch Man"></td>
+                <td>One Punch Man</td>
+                <td>Saitama</td>
+                <td>The strongest man in the world who can defeat any enemy with just one punch.</td>
+            </tr>
+            <tr data-url="https://pbs.twimg.com/media/EyThJVzVoAA2bN-?format=jpg&name=4096x4096">
+                <td class="anime-image"><img src="C:\Users\jayad\Desktop\HTML\IMAGES\satoru-gojo-4k.jpg" alt="Jujutsu Kaisen"></td>
+                <td>Jujutsu Kaisen</td>
+                <td>Gojo Saturo</td>
+                <td>A powerful jujutsu sorcerer who is known for his unique cursed techniques and his ability to manipulate space.</td>
+            </tr>
+            <tr data-url="https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/04/eminence-in-shadow-i-am-atomic.png">
+                <td class="anime-image"><img src="C:\Users\jayad\Desktop\HTML\IMAGES\shadow.jpg" alt="The Eminence in Shadow"></td>
+                <td>The Eminence in Shadow</td>
+                <td>Shadow (Cid Kagenou)</td>
+                <td>A teenager who dreams of becoming a shadowy figure who operates behind the scenes and manipulates events in the world of evil.</td>
+            </tr>
+            <tr data-url="https://vignette.wikia.nocookie.net/dragon-ball-legends/images/e/ec/Ssgss_goku.png/revision/latest?cb=20190913002037">
+                <td class="anime-image"><img src="C:\Users\jayad\Desktop\HTML\IMAGES\goku.jpg" alt="Dragon Ball"></td>
+                <td>Dragon Ball</td>
+                <td>Goku</td>
+                <td>A Saiyan who was sent to Earth as a baby and raised by humans, he possesses extraordinary strength and the ability to fly.</td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+        // JavaScript to change background image on hover
+        document.addEventListener("DOMContentLoaded", function() {
+            var animeTableRows = document.querySelectorAll(".anime-table tr");
+            animeTableRows.forEach(function(row) {
+                row.addEventListener("mouseover", function() {
+                    document.body.style.backgroundImage = "url('" + row.getAttribute("data-url") + "')" ;
+                });
+                row.addEventListener("mouseout", function() {
+                    document.body.style.backgroundImage = "url('https://upload-os-bbs.hoyolab.com/upload/2023/01/11/191975293/c88b514fae01c2a33b21eef4f156c13a_8045767176217813513.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80')";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
