@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="grpact3.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div id="Header">
+        
+        
+        <img src="https://anokha.amrita.edu/_next/image?url=%2Fimages%2Fanokha2024_logo.png&w=256&q=75">
+    
+    
+    </div>
+    <br>
+    <div class="centered-image">
+    <img src="https://i.ytimg.com/vi/6xEH8MKUkXE/maxresdefault.jpg">
+    
+</div>
+<div class="utube">
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/1HixH6HK1lU" >
+</iframe>
+
+</div>
+<div class="music">
+<audio controls>
+    <source src="C:\Users\jayad\Downloads\Motion Array-Going Up Edit01.mp3" type="audio/mp3">
+</audio>
+</div>
+
+    <div id="contents">
+        <form action="" method="post" class="form-container"> 
+            <div class="form-half">
+                <label for="username">Name:</label>
+                <input type="text" id="username" placeholder="Name"><br><br>
+                
+                <label for="phonenum">Phone Number:</label>
+                <input type="text" maxlength="10" required placeholder="XXXXX-XXXXX"><br><br>
+                
+                <label for="collegename">College Name:</label>
+                <input type="text"><br><br>
+                
+                <label for="College City">College City:</label>
+                <input type="text"><br><br>
+
+                <p>Gender:
+                    <label><input type="radio" name="gender" value="m"/><span class="jojo" >Male</span></label>
+                    <label><input class="jojo" type="radio" name="gender" value="f"/><span class="jojo" >Female</span></label>
+                </p>
+            </div>
+            <div class="form-half">
+                <label for="Amrita student">Amrita Student?</label>
+                <input type="checkbox"><br><br>
+                
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="xyz@hotmail.com"><br><br>
+                
+                <label for="pass">Password:</label>
+                <input type="Password" id="pass" placeholder="Password*"><br><br>
+                
+                <label for="conpass">Confirm Password:</label>
+                <input type="Password" id="conpass" placeholder="Password*"><br><br>
+            </div>
+            
+        </form>
+        <button class="signup-button">Sign Up ?</button>
+    </div>
+</body>
+</html>
